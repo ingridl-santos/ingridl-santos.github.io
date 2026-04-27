@@ -1,105 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Ingrid Santos</title>
-		<link href="https://fonts.googleapis.com/css2?family=Starjedi&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		<link rel="stylesheet" href="style.css">
-		<link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/svg+xml">
-	</head>
-	<body>
-		<div class="container">
-			<aside class="left-column" aria-labelledby="profile-title">
-				<div class="card">
-					<h1 id="profile-title">Ingrid L Santos</h1>
-					<h2>Software Engineer</h2>
-					<img src="picrew-me.png" alt="Portrait of Ingrid Santos" class="header-image" aria-hidden="false">
-					<h3>Skills</h3>
-					<ul class="skills-container" role="list">
-						<li><i class="fab fa-html5" aria-hidden="true"></i> HTML5</li>
-						<li><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS3</li>
-						<li><i class="fab fa-js" aria-hidden="true"></i> JavaScript</li>
-						<li><i class="fab fa-react" aria-hidden="true"></i> React</li>
-						<li><i class="fab fa-vuejs" aria-hidden="true"></i> Vue</li>
-						<li><i class="fab fa-git-alt" aria-hidden="true"></i> Git</li>
-						<li><i class="fab fa-github" aria-hidden="true"></i> GitHub Actions</li>
-						<li><i class="fab fa-docker" aria-hidden="true"></i> Docker</li>
-						<li><i class="fab fa-js" aria-hidden="true"></i> TypeScript</li>
-					</ul>
-					<h3>Contact</h3>
-					<div class="contact-icons">
-						<p><a href="mailto:ingrid.lds15@gmail.com"><i class="fas fa-envelope"></i></a></p>
-						<p><a href="https://www.linkedin.com/in/ingridl-santos/"><i class="fab fa-linkedin"></i></a></p>
-						<p><a href="https://github.com/ingridl-santos"><i class="fab fa-github"></i></a></p>
-				</div>
-					<h3>Links</h3>
-					<ul>
-						<li>
-							<i class="fas fa-book-open" aria-hidden="true"></i>
-							<a href="https://ingridl-santos.github.io/zettelkasten/" target="_blank" rel="noopener noreferrer" aria-label="Zettelkasten Project">
-								Zettelkasten
-							</a>
-						</li>
-					</ul>
-				</div>
-			</aside>
-			<main class="right-column" aria-labelledby="experience-title">
-				<section class="summary" aria-labelledby="summary-title">
-					<h3 id="summary-title">Summary</h3>
-					<p>
-						I am Ingrid Santos, a dedicated Software Engineer focusing on frontend development at Wiley.
-						I hold a Bachelor's degree in Computer Science and possess strong scientific research skills in data privacy and security.
-						Additionally, I have a keen interest in education in computing and I am an enthusiastic advocate for internet governance.
-					</p>
-				</section>
-				<section class="experience" aria-labelledby="experience-title">
-					<h3 id="experience-title">Experience</h3>
-					<ul role="list">
-						<li>
-							<strong>Wiley</strong> - Software Engineer (October 2020 - Present)
-							<p>As a Software Engineer, I play a key role in developing and evolving our product. My responsibilities extend beyond feature development, including conducting code reviews, mentoring new team members, and actively managing internal community interactions. I contribute to the growth of both the product and our team through hands-on development, collaboration, and leadership.</p>
-						</li>
-						<li>
-							<strong>CESAR</strong> - Software Engineer Intern (August 2018 - June 2020)
-							<p>Contributed to a project for monitoring purchases and generating invoices, and another for generating intelligent reports in real-time. Also participated in a Proof of Concept (PoC) in industrial automation using the KNoT platform, monitoring facilities through a real-time dashboard.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="projects" aria-labelledby="projects-title">
-					<h3 id="projects-title">Personal Projects</h3>
-					<ul role="list">
-						<li>
-							<strong><a href="https://github.com/ingridl-santos/twitter-bot" target="_blank" rel="noopener noreferrer">Twitter Bot:</a></strong> A bot for Twitter made with Python and Tweepy. This bot automates the task of reposting tweets based on specific subjects or hashtags, helping in curating and sharing content relevant to particular topics efficiently.
-						</li>
-						<li>
-							<strong><a href="https://github.com/ingridl-santos/saintflix" target="_blank" rel="noopener noreferrer">SaintFlix:</a></strong>
-							A Netflix clone made with React and deployed on Vercel during #ImersãoReact by Alura Cursos. This project showcases my skills in React and web development.
-						</li>
-						<li>
-							<strong><a href="https://github.com/ingridl-santos/zettelkasten" target="_blank" rel="noopener noreferrer">Zettelkasten:</a></strong> A personal knowledge management system built using Docusaurus and hosted on GitHub Pages. This project leverages the Zettelkasten method to organize and interlink notes, enhancing learning and idea generation. It showcases my skills in static site generation and content management.
-						</li>
-					</ul>
-				</section>
-				<section class="fellowship" aria-labelledby="fellowship-title">
-					<h3 id="fellowship-title">Fellowship</h3>
-					<ul role="list">
-						<li>
-							<strong>Youth Brazil Program (Programa Youth Brasil 2019-2020)</strong> - Training of leaders and encouraging the participation of young people in discussions on Internet Governance.
-						</li>
-					</ul>
-				</section>
-				<section class="languages" aria-labelledby="languages-title">
-					<h3 id="languages-title">Languages</h3>
-					<ul role="list">
-						<li>English - Proficient</li>
-						<li>Portuguese - Native</li>
-						<li>Spanish - Beginner</li>
-						<li>Japanese - Proficient</li>
-					</ul>
-				</section>
-			</main>
-		</div>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ingrid Santos</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Prevent theme flash -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+
+      if (savedTheme === "light" || (!savedTheme && prefersLight)) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- THEME TOGGLE -->
+    <div class="theme-toggle">
+      <button id="toggle-theme" aria-label="Toggle theme">
+        <span class="toggle-track">
+          <span class="icon moon">
+            <svg viewBox="0 0 24 24" width="14" height="14">
+              <path d="M21 12.79A9 9 0 0 1 11.21 3
+              7 7 0 1 0 21 12.79z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="icon sun">
+            <svg viewBox="0 0 24 24" width="14" height="14">
+              <circle cx="12" cy="12" r="5" fill="currentColor"/>
+              <g stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="4"/>
+                <line x1="12" y1="20" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="4" y2="12"/>
+                <line x1="20" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+              </g>
+            </svg>
+          </span>
+          <span class="toggle-thumb"></span>
+        </span>
+      </button>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Ingrid Santos</h1>
+      <p class="subtitle">
+        Software Engineer focused on frontend systems, with growing experience in backend and distributed architectures.
+      </p>
+    </section>
+
+    <!-- FOCUS -->
+    <section class="focus">
+      <p>
+        I design and build systems with an emphasis on scalability, maintainability, and real-world performance.
+        My background is deeply rooted in frontend engineering, and I’m currently expanding into backend and system design to better understand and shape end-to-end architectures.
+      </p>
+    </section>
+
+    <!-- WORK -->
+    <section class="work">
+      <h2>Selected Work</h2>
+
+      <div class="work-item">
+        <a href="https://flag-football-analyzer.vercel.app/" target="_blank">
+          Flag Football Analyzer
+        </a>
+        <p>
+          Built a video analysis tool to streamline tagging workflows, focusing on data modeling, usability, and extensibility for future performance analysis features.
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTAL -->
+    <section class="portal">
+      <a href="/garden" class="card">
+        <h3>🌱 Digital Garden</h3>
+        <p>Notes, ideas, and ongoing explorations on systems, architecture, and engineering practices.</p>
+      </a>
+
+      <div class="card">
+        <h3>🧭 Now</h3>
+        <p>
+          Deepening knowledge in backend architecture, distributed systems, and system design while continuing to refine frontend system expertise.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+
+      <!-- GitHub -->
+      <a href="https://github.com/ingridl-santos" target="_blank" class="contact-item">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.73c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.1V22"/>
+        </svg>
+        <span>GitHub</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/ingridl-santos/" target="_blank" class="contact-item">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+
+      <!-- Email (Copy) -->
+      <button class="contact-item" id="copy-email" data-email="ingrid.lds15@gmail.com">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <polyline points="3 7 12 13 21 7"/>
+        </svg>
+        <span id="email-label">Email</span>
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
